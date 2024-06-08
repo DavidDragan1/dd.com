@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'daviddragan@protonmail.com';
+  $receiving_email_address = 'daviddragan377@gmail.com';
 
 
   $contact = new PHP_Email_Form;
