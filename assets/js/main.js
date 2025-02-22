@@ -260,14 +260,4 @@
 
 })()
 
-function timeSince(year, month, day) {
-    const { DateTime } = luxon;
-    const birthDate = DateTime.fromObject({ year, month, day });
-    const now = DateTime.now();
-    
-    const diff = now.diff(birthDate, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject();
 
-    return `${Math.floor(diff.years)} years, ${Math.floor(diff.months)} months, ` +
-            `${Math.floor(diff.days)} days, ${Math.floor(diff.hours)} hours, ` +
-            `${Math.floor(diff.minutes)} minutes, and ${Math.floor(diff.seconds)} seconds old.`;
-}
