@@ -888,8 +888,8 @@
         
         const diff = now.diff(birthDate, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject();
 
-        return `${Math.floor(diff.years)} y, ${Math.floor(diff.months)} m, ` +
-                `${Math.floor(diff.days)} d, ${Math.floor(diff.hours)} h, ` +
+        return `${Math.floor(diff.years)}y, ${Math.floor(diff.months)}m, ` +
+                `${Math.floor(diff.days)}d, ${Math.floor(diff.hours)}h, ` +
                 `${Math.floor(diff.minutes)} m`;
     }
     document.getElementById("age").innerHTML = `${timeSince(2004, 8, 19)}`;
