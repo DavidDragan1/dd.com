@@ -888,11 +888,11 @@
         
         const diff = now.diff(birthDate, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject();
 
-        return `${Math.floor(diff.years)} years, ${Math.floor(diff.months)} months, ` +
-                `${Math.floor(diff.days)} days, ${Math.floor(diff.hours)} hours, ` +
-                `${Math.floor(diff.minutes)} minutes, and ${Math.floor(diff.seconds)} seconds.`;
+        return `${Math.floor(diff.years)} y, ${Math.floor(diff.months)} m, ` +
+                `${Math.floor(diff.days)} d, ${Math.floor(diff.hours)} h, ` +
+                `${Math.floor(diff.minutes)} m, and ${Math.floor(diff.seconds)} s.`;
     }
-    document.getElementById("age").innerHTML = `${timeSince(2004, 8, 1)}`;
+    document.getElementById("age").innerHTML = `${timeSince(2004, 8, 19)}`;
   </script>
 
 </body>
