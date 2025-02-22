@@ -1,10 +1,4 @@
-/**
-* Template Name: Personal
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -265,3 +259,15 @@
   new PureCounter();
 
 })()
+
+function timeSince(year, month, day) {
+    const { DateTime } = luxon;
+    const birthDate = DateTime.fromObject({ year, month, day });
+    const now = DateTime.now();
+    
+    const diff = now.diff(birthDate, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject();
+
+    return `${Math.floor(diff.years)} years, ${Math.floor(diff.months)} months, ` +
+            `${Math.floor(diff.days)} days, ${Math.floor(diff.hours)} hours, ` +
+            `${Math.floor(diff.minutes)} minutes, and ${Math.floor(diff.seconds)} seconds old.`;
+}
